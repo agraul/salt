@@ -151,6 +151,10 @@ if [ "$SUDO" ] && [ "$SUDO_USER" ]
 then SUDO="$SUDO -u $SUDO_USER"
 fi
 EX_PYTHON_INVALID={EX_THIN_PYTHON_INVALID}
+SYSTEMD_INHIBIT=""
+if command -v systemd-inhibit
+then SYSTEMD_INHIBIT="systemd-inhibit --what=shutdown --who=SaltSSH --mode=delay"
+fi
 set +x
 SSH_PY_CODE='import base64;
                    exec(base64.b64decode("""{{SSH_PY_CODE}}""").decode("utf-8"))'
@@ -169,7 +173,7 @@ do
         then
             if echo $cmdpath | grep venv-salt-minion > /dev/null
             then
-                exec $SUDO "$cmdpath" -c "$SSH_PY_CODE"
+                exec $SYSTEMD_INHIBIT $SUDO "$cmdpath" -c "$SSH_PY_CODE"
             fi
             ex_vars="'PATH', 'LD_LIBRARY_PATH', 'MANPATH', \
                    'XDG_DATA_DIRS', 'PKG_CONFIG_PATH'"
@@ -179,12 +183,12 @@ do
                   import os;
                   map(sys.stdout.write, ['{{{{0}}}}={{{{1}}}} ' \
                   .format(x, os.environ[x]) for x in [$ex_vars]])"`
-            exec $SUDO PATH=$PATH LD_LIBRARY_PATH=$LD_LIBRARY_PATH \
+            exec $SYSTEMD_INHIBIT $SUDO PATH=$PATH LD_LIBRARY_PATH=$LD_LIBRARY_PATH \
                      MANPATH=$MANPATH XDG_DATA_DIRS=$XDG_DATA_DIRS \
                      PKG_CONFIG_PATH=$PKG_CONFIG_PATH \
                      "$py_cmd_path" -c "$SSH_PY_CODE"
         else
-            exec $SUDO "$py_cmd_path" -c "$SSH_PY_CODE"
+            exec $SYSTEMD_INHIBIT $SUDO "$py_cmd_path" -c "$SSH_PY_CODE"
         fi
         exit 0
     else
