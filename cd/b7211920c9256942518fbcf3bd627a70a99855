@@ -1,7 +1,7 @@
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/commit/d92b5423464f93da6e3feb47d05a9acef8da75f9
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/commit/60b36489225f958772b6a2f99d8fe6ae33ee9d73
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/commit/eee0eca5e48922e5e404f812ced08ca7484bb568
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/commit/991f7cf0a7baf08a31194ce52f4ec08290db8e52
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/commit/2688c86f45eea9f8a6b916fcdf8eb94b3f5e185b
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/commit/a1873a1d6d50d1769ddef528d7442e38aba9de23
-DOWNSTREAM-REF=https://github.com/openSUSE/salt/commit/c7ecccb0a080ca9cca097f760ef0992ab34f82df
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/commit/d92b5423464f93da6e3feb47d05a9acef8da75f9
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/commit/60b36489225f958772b6a2f99d8fe6ae33ee9d73
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/commit/eee0eca5e48922e5e404f812ced08ca7484bb568
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/commit/991f7cf0a7baf08a31194ce52f4ec08290db8e52
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/commit/2688c86f45eea9f8a6b916fcdf8eb94b3f5e185b
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/commit/a1873a1d6d50d1769ddef528d7442e38aba9de23
+DOWNSTREAM-REF: https://github.com/openSUSE/salt/commit/c7ecccb0a080ca9cca097f760ef0992ab34f82df
