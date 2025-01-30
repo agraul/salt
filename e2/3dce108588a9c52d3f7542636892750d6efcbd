@@ -1,1 +1,1 @@
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/commit/9683260d61668da8559ecde6caf63a52fedd8790
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/commit/9683260d61668da8559ecde6caf63a52fedd8790
