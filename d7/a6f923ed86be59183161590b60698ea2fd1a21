@@ -1,2 +1,2 @@
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/pull/66899
-DOWNSTREAM-REF=https://github.com/openSUSE/salt/pull/698
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/pull/66899
+DOWNSTREAM-REF: https://github.com/openSUSE/salt/pull/698
