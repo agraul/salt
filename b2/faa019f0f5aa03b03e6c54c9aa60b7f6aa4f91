@@ -1,1 +1,1 @@
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/pull/66856
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/pull/66856
