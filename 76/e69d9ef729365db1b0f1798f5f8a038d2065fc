@@ -1,10 +1,10 @@
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/pull/60269
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/pull/50546
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/pull/51863
-BACKPORT-UPSTREAM=https://github.com/saltstack/salt/pull/52855
-DOWNSTREAM-REF=https://github.com/openSUSE/salt/pull/139
-DOWNSTREAM-REF=https://github.com/openSUSE/salt/pull/141
-DOWNSTREAM-REF=https://github.com/openSUSE/salt/pull/144
-DOWNSTREAM-REF=https://github.com/openSUSE/salt/commit/6af07030a502c427781991fc9a2b994fa04ef32e
-DOWNSTREAM-REF=https://github.com/openSUSE/salt/commit/002543df392f65d95dbc127dc058ac897f2035ed
-DOWNSTREAM-REF=https://github.com/openSUSE/salt/pull/320
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/pull/60269
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/pull/50546
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/pull/51863
+BACKPORT-UPSTREAM: https://github.com/saltstack/salt/pull/52855
+DOWNSTREAM-REF: https://github.com/openSUSE/salt/pull/139
+DOWNSTREAM-REF: https://github.com/openSUSE/salt/pull/141
+DOWNSTREAM-REF: https://github.com/openSUSE/salt/pull/144
+DOWNSTREAM-REF: https://github.com/openSUSE/salt/commit/6af07030a502c427781991fc9a2b994fa04ef32e
+DOWNSTREAM-REF: https://github.com/openSUSE/salt/commit/002543df392f65d95dbc127dc058ac897f2035ed
+DOWNSTREAM-REF: https://github.com/openSUSE/salt/pull/320
